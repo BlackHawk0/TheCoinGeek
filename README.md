@@ -13,6 +13,7 @@
 > This is a cryptocurrency API that allows users to track the prices of various cryptocurrencies in real-time. The app uses React Router DOM to navigate between different pages, and includes a table on the home page that displays the prices of the top 10 cryptocurrencies.
 
 ### ✨ [Live Link]
+https://63404db64494061bc6d71667--astounding-semifreddo-a15129.netlify.app/
 
 ## Installation
 
