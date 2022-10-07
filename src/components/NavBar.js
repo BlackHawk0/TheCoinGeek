@@ -2,7 +2,7 @@ import React from 'react'
 import {FaCoins} from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 
-function NavBar() {//mt-10
+function NavBar() {
     return (
         <Link to='/'>
             <div className='flex justify-center text-center'>

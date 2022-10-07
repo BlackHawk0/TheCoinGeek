@@ -1,10 +1,10 @@
 import React from 'react'
-import RenderCoin from './RenderCoin'
-import '../index.css'
-import { Link } from 'react-router-dom'
+import CoinItem from './RenderCoin'
 import Coin from '../routing/Coin'
+import { Link } from 'react-router-dom'
+import '../index.css'
 
-function Coins({coins}) {
+function  Coins ({coins}){
     return (
         <div className='max-w-screen-lg m-auto'>
             <div>
@@ -14,14 +14,18 @@ function Coins({coins}) {
                     <p>Price</p>
                     <p>24h</p>
                     <p className='hide-mobile'>Volume</p>
-                    <p className='hide-mobile'>Market Cap</p>
+                    <p className='hide-mobile'>Mkt Cap</p>
                 </div>
 
-                {coins.map(coin => (
-                    <Link to={`/icon/${coin.id}`} element={<Coin />} key={coin.id}>
-                        <RenderCoin coin={coin} />
-                    </Link>
-                ))}
+                {coins.map(coin => {
+                    return (
+                        <Link to={`/coin/${coin.id}`} element={<Coin />} key={coin.id}>
+                            <CoinItem coin={coin} />
+                        </Link>
+
+                    )
+                })}
+
             </div>
         </div>
     )
