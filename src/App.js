@@ -13,7 +13,7 @@ function App() {
         .then(res=> res.json())
         .then(data => setCoins(data))
         .catch((error )=> console.log('Error:', error))
-    },[])
+    },[url])
 
   return (
       <>
