@@ -1,10 +1,9 @@
 import React from 'react'
-import Coins from './Coins'
 
 function RenderCoin({coin}) {
   return (
     <div>
-        <p>{coin.market_cap_rank}</p>
+        <p className='flex justify-between items-center bg-gray-900 shadow-sm rounded-lg mt-6 mr-4 ml-4 pt-2.5 pl-2.5 pr-2.5'>{coin.market_cap_rank}</p>
         <div>
             <img src={coin.image} alt={coin.name} />
         </div>

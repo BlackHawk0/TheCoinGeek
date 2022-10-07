@@ -39,3 +39,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+@media screen and (max-width: 720px) {
+    .hide-mobile {
+        display: none;
+    }
+}
