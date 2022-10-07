@@ -1,6 +1,7 @@
 import React from 'react'
+import RenderCoin from './RenderCoin'
 
-function Coins() {
+function Coins({coins}) {
     return (
         <div>
             <div>
@@ -11,6 +12,13 @@ function Coins() {
                     <p>Volume</p>
                     <p>Market Cap</p>
                 </div>
+
+                {coins.map(coin => (
+                    <RenderCoin 
+                        key={coin.id}
+                        coin={coin}
+                    />
+                ))}
             </div>
         </div>
     )

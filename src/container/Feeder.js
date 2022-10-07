@@ -10,6 +10,7 @@ function Feeder() {
         .then(data => setCoins(data))
         .catch((error )=> console.log('Error:', error))
     },[])
+    console.log(coins);
 
     return (
         <div>
