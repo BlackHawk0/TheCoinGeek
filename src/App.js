@@ -3,7 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import NavBar from './components/NavBar';
 import Coins from './components/Coins'
-import Coin from './components/routing/Coin';
+import Coin from './routing/Coin';
 
 function App() {
     const [coins, setCoins] = useState([])
@@ -14,15 +14,18 @@ function App() {
         .then(data => setCoins(data))
         .catch((error )=> console.log('Error:', error))
     },[])
-    console.log(coins);
 
     return (
         <>
+
         <NavBar />
+        <Coin />
         <Routes>
             <Route path='/' element={<Coins coins={coins}/>}/>
-            <Route path='/coin' element={<Coin />}/>
-            <Route path=':coinId' element={<Coin />} />
+            <Route path='/coin' element={<Coin />}> 
+              <Route path=':coinId' element={<Coin />} />
+            </Route>
+            
         </Routes>
             
         </>

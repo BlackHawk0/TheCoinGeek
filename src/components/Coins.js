@@ -2,7 +2,7 @@ import React from 'react'
 import RenderCoin from './RenderCoin'
 import '../index.css'
 import { Link } from 'react-router-dom'
-import Coin from './routing/Coin'
+import Coin from '../routing/Coin'
 
 function Coins({coins}) {
     return (
@@ -18,13 +18,9 @@ function Coins({coins}) {
                 </div>
 
                 {coins.map(coin => (
-                    <Link to={`/icon/${coin.id}`} element={<Coin />} 
-                            key={coin.id}>
-                        <RenderCoin 
-                            coin={coin}
-                        />
+                    <Link to={`/icon/${coin.id}`} element={<Coin />} key={coin.id}>
+                        <RenderCoin coin={coin} />
                     </Link>
-                   
                 ))}
             </div>
         </div>
