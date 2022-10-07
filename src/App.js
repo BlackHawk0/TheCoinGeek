@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import NavBar from './components/NavBar';
 import Coins from './components/Coins'
+import Coin from './components/routing/Coin';
 
 function App() {
     const [coins, setCoins] = useState([])
@@ -19,7 +20,9 @@ function App() {
         <>
         <NavBar />
         <Routes>
-            <Route path='' element={<Coins coins={coins}/>}/>
+            <Route path='/' element={<Coins coins={coins}/>}/>
+            <Route path='/coin' element={<Coin />}/>
+            <Route path=':coinId' element={<Coin />} />
         </Routes>
             
         </>
