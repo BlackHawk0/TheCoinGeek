@@ -43,7 +43,9 @@ a {
     cursor: pointer;
 }
 
-
+.rank {
+    margin: .5 0;
+}
 
 h1 {
   text-align: center;
