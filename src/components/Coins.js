@@ -1,6 +1,7 @@
 import React from 'react'
 import CoinItem from './RenderCoin'
 import Coin from '../routing/Coin'
+import Spinner from './Spinner'
 import { Link } from 'react-router-dom'
 import '../index.css'
 
@@ -17,7 +18,7 @@ function  Coins ({coins}){
                     <p className='hide-mobile'>Mkt Cap</p>
                 </div>
 
-                {coins.map(coin => {
+                {coins === undefined || coins.length === 0 ? <Spinner /> : coins.map(coin => {
                     return (
                         <Link to={`/coin/${coin.id}`} element={<Coin />} key={coin.id}>
                             <CoinItem coin={coin} />

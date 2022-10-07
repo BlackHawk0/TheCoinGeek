@@ -2,6 +2,7 @@ import React from 'react'
 import '../index.css'
 
 function RenderCoin({coin}) {
+  
   return (
     <div className='coin-row'>
       <p>{coin.market_cap_rank}</p>
