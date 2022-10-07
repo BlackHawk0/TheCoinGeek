@@ -6,7 +6,7 @@ function Coins({coins}) {
     return (
         <div className='max-w-screen-lg m-auto'>
             <div>
-                <div className='flex justify-between items-center bg-gray-900 rounded-lg font-bold mx-4 my-8 py-3 px-4 shadow-sm'>
+                <div className='flex flex-row justify-between items-center bg-gray-900 rounded-lg font-bold mx-4 my-8 py-3 px-4 shadow-sm'>
                     <p>#</p>
                     <p className='-ml-16'>Coin</p>
                     <p>Price</p>
