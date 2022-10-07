@@ -21,9 +21,15 @@ const Coin = ()=> {
                 <div className='flex flex-col bg-gray-900 rounded-lg shadow pt-2.5 px-2.5 max-w-3xl'>
                     <h1>{coin.name}</h1>
                 </div>
-                <div>
+                <div className='content'>
+                    <div className='rank'>
+                        <span className='ank-btn'>Rank # {coin.market_cap_rank}</span>
+                    </div>
                     <div>
-                        <span className='rank'>Rank #</span>
+                        <div>
+                          {coin.image ? <img src={coin.image.small} alt='' /> : null}  
+                        </div>
+                    </div>
                     </div>
                 </div>
 
