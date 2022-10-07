@@ -1,6 +1,7 @@
 import React from 'react'
 import '../index.css'
 
+//render coin information (Home)
 function RenderCoin({coin}) {
   
   return (

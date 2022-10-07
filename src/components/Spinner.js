@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react'
 import spinner from '../resources/spinner.gif'
 
+//spinner on async
 const Spinner = () => {
   return (
     <Fragment>

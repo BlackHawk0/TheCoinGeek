@@ -4,7 +4,8 @@ import React, { useState, useEffect } from 'react'
 import DOMPurify from 'dompurify'
 import '../index.css'
 
-const Coin = () => {
+//renders the page with information about a specific coin
+function Coin() {
 
     const params = useParams()
     const [coin, setCoin] = useState({})

@@ -5,6 +5,7 @@ import Spinner from './Spinner'
 import { Link } from 'react-router-dom'
 import '../index.css'
 
+//map over the coins
 function  Coins ({coins}){
     return (
         <div className='max-w-screen-lg m-auto'>
