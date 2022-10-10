@@ -23,6 +23,7 @@ function Coin() {
 
     return (
         <div>
+
             <div className='coin-container'>
                 <div className='content'>
                     <h1>{coin.name}</h1>
@@ -39,7 +40,7 @@ function Coin() {
                             
                         </div>
                         <div className='coin-price'>
-                            {coin.market_data?.current_price ? <h1>${coin.market_data.current_price.usd.toLocaleString()}</h1> : null}
+                            {coin.market_data?.current_price ? <h1>${coin.market_data.current_price.usd.toLocaleString() }</h1> : null}
                         </div>
                     </div>
                 </div>
@@ -85,6 +86,7 @@ function Coin() {
                             <div className='row'>
                                 <h4>Market Cap</h4>
                                 {coin.market_data?.market_cap ? <p>${coin.market_data.market_cap.usd.toLocaleString()}</p> : null}
+                                
                             </div>
                             <div className='row'>
                                 <h4>Circulating Supply</h4>
